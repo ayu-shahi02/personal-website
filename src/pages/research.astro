@@ -9,7 +9,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 >
   <h2 class="section-header">Academic Work (Undergraduate)</h2>
 
-  <ul class="paper-list">
+  <ol class="paper-list">
     <li class="paper-entry">
       <h3 class="paper-title">
         Culture, Institutions, and the Child Penalty
@@ -23,10 +23,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
       <div id="abstract-1" class="abstract-content">
         <p>
-          This thesis examines gender norms, work-family policies, and the motherhood penalty in developing nations.
-          Using data from Demographic and Health Surveys, the study employs instrumental variable analysis and a
-          staggered difference-in-differences approach to investigate how cultural and institutional factors
-          shape the economic costs of parenthood, with particular focus on mothers in developing economies.
+          This study examines the impact of gender norms and work-family policies on the motherhood penalty across a large sample of developing countries. I find that ancestral adoption of the plough created cultural norms reducing women's labor force participation, with especially pronounced effects for mothers. A difference-in-differences analysis shows mixed results for gender-equal laws, though paid maternity leave demonstrates significant long-term employment benefits.
         </p>
       </div>
     </li>
@@ -46,9 +43,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
       <div id="abstract-2" class="abstract-content">
         <p>
-          This paper examines the relationship between Unified Payments Interface (UPI) adoption and economic crime
-          in Indian districts. We investigate whether the shift toward digital payments reduces opportunities for
-          certain types of crime by altering the transaction landscape and reducing the prevalence of cash-based exchanges.
+          The introduction of Unified Payments Interface (UPI) in 2016 transformed the digital payments landscape in India. Using district-level variation in UPI adoption timing, we employed difference-in-differences methodology and found that earlier-adopting districts experienced lower economic crime (robbery, burglary) but no change in non-economic crimes, suggesting decreased cash availability as a mechanism.
         </p>
       </div>
     </li>
@@ -68,9 +63,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
       <div id="abstract-3" class="abstract-content">
         <p>
-          This study provides a comparative analysis of health outcomes using National Family Health Survey Round 5 data.
-          We examine whether orphanhood status can explain observed nutritional disparities among children in India,
-          controlling for household characteristics and regional factors.
+          Absence of biological parents is expected to negatively impact their orphaned children's health outcomes through channels of depressed household incomes. Our comparative analysis examined stunting, wasting, and malnutrition across paternal orphans, maternal orphans, and double orphans versus non-orphans. Results showed orphans generally experienced disadvantages, though double orphans performed comparably in certain contexts.
         </p>
       </div>
     </li>
@@ -87,19 +80,17 @@ import BaseLayout from '../layouts/BaseLayout.astro';
       </button>
       <div id="abstract-4" class="abstract-content">
         <p>
-          This paper investigates how internet-related foreign aid affects government capacity to control the internet.
-          The study explores the contingent effects of aid depending on regime type and governance structures,
-          examining the unintended consequences of technology-focused development assistance.
+          I hypothesize that internet-related foreign aid increases governmental capacity to control internet access, which authoritarian regimes exploit for censorship purposes, while offering limited evidence for improved freedom outcomes across recipient countries.
         </p>
       </div>
     </li>
-  </ul>
+  </ol>
 
 </BaseLayout>
 
 <style>
   .paper-list {
-    list-style: disc;
+    list-style: decimal;
     padding-left: 1.5rem;
     margin: 0;
   }
@@ -112,6 +103,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 
   .paper-list .paper-entry::marker {
     color: var(--color-text);
+    font-weight: 600;
   }
 </style>
 
